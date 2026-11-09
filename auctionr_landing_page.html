@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Continue to the external website.">
+  <title>Continue to Website</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 24px; font-family: Arial, Helvetica, sans-serif;
+      color: #f8fafc; background: radial-gradient(circle at top, #243b68, #0b1020 65%);
+    }
+    .card {
+      width: min(100%, 520px); padding: 42px 30px; text-align: center;
+      border: 1px solid rgba(255,255,255,.14); border-radius: 24px;
+      background: rgba(255,255,255,.08); box-shadow: 0 24px 70px rgba(0,0,0,.35);
+      backdrop-filter: blur(12px);
+    }
+    .mark {
+      width: 64px; height: 64px; margin: 0 auto 22px; display: grid; place-items: center;
+      border-radius: 20px; background: #2563eb; font-size: 28px; font-weight: 800;
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(26px, 6vw, 36px); }
+    p { margin: 0 auto 22px; max-width: 390px; color: #cbd5e1; line-height: 1.65; }
+    .destination {
+      margin: 0 0 24px; padding: 12px; border-radius: 12px;
+      overflow-wrap: anywhere; color: #bfdbfe; background: rgba(15,23,42,.65);
+      font-size: 13px;
+    }
+    a.button {
+      display: inline-block; padding: 15px 28px; border-radius: 12px;
+      background: #3b82f6; color: white; text-decoration: none;
+      font-weight: 700; transition: transform .2s, background .2s;
+    }
+    a.button:hover { background: #2563eb; transform: translateY(-2px); }
+    .note { margin-top: 22px; font-size: 12px; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="mark" aria-hidden="true">↗</div>
+    <h1>Continue to Website</h1>
+    <p>You are about to open an external website. Please review the destination before continuing.</p>
+    <div class="destination">auctionr.org</div>
+    <a class="button"
+       href="https://auctionr.org/4/d25a5c02d229a834c28a86c12a106104"
+       target="_blank" rel="noopener noreferrer">
+      Continue
+    </a>
+    <div class="note">You will leave this GitHub Pages website when you continue.</div>
+  </main>
+</body>
+</html>
